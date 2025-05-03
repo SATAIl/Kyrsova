@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae19668e4f77a8447be1419b840a3f17, type: 3}
+  m_Name: BT
+  m_EditorClassIdentifier: 
+  skinId: 
+  displayName: 
+  icon: {fileID: 21300000, guid: 2b93bd2dcb5079d4d8b05819c164fcbb, type: 3}
+  price: 100
+  type: 1
+  swipeTrailMaterial: {fileID: 0}
+  blockEffectPrefab: {fileID: 2074599170607420940, guid: 4a3be8a8eac23e04c9373d97241f4a50, type: 3}
+  isUnlocked: 0
