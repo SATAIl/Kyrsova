@@ -10,7 +10,7 @@ public static class RecordManager
         private set
         {
             PlayerPrefs.SetInt(KEY, value);
-            PlayerPrefs.Save(); // Важливо зберегти зміни одразу
+            PlayerPrefs.Save();
         }
     }
 
@@ -19,12 +19,11 @@ public static class RecordManager
         if (score > HighScore)
         {
             HighScore = score;
-            return true; // повертаємо true, якщо рекорд оновлено
+            return true;
         }
         return false;
     }
 
-    // Для скидання рекорду (корисно для тестів)
     public static void Reset()
     {
         HighScore = 0;
