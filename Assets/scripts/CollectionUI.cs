@@ -26,7 +26,6 @@ public class CollectionUI : MonoBehaviour
 
     void Start()
     {
-		CurrencyManager.Add(1000);
         // 1) Показати поточний баланс
         coinsText.text = CurrencyManager.Balance.ToString();
 

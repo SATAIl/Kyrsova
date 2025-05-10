@@ -11,7 +11,7 @@ public class GameOverManager : MonoBehaviour
     [Header("Result Texts")]
     public TextMeshProUGUI yourScoreText;
     public TextMeshProUGUI highScoreText;
-    public TextMeshProUGUI coinText;          // тут тепер монети сесії
+    public TextMeshProUGUI coinText;
 
     [Header("Buttons")]
     public Button restartButton;
@@ -31,11 +31,12 @@ public class GameOverManager : MonoBehaviour
         int finalScore = GameSceneManager.Instance.Score;
         yourScoreText.text = $"Рахунок: {finalScore}";
 
-        // якщо RecordManager ще не реалізований,
-        // можна тимчасово виводити finalScore як HighScore
-        highScoreText.text = $"Рекорд: {finalScore}";
+        // Правильно перевіряємо й оновлюємо рекорд
+        RecordManager.TryUpdate(finalScore);
 
-        // ** ось тут монети сесії **
+        // Тепер завжди отримуємо актуальний рекорд
+        highScoreText.text = $"Рекорд: {RecordManager.HighScore}";
+
         int sessionCoins = GameSceneManager.Instance.SessionCoins;
         coinText.text = $"Монети: {sessionCoins}";
 
