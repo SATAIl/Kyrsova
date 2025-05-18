@@ -45,7 +45,7 @@ public class EffectManager : MonoBehaviour
         var prefab = skin.blockEffectPrefab;
         if (prefab == null)
         {
-            Debug.LogWarning("[EffectManager] У скині немає blockEffectPrefab!");
+            Debug.LogWarning("[EffectManager] У скіні немає blockEffectPrefab!");
             return;
         }
 

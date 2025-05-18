@@ -93,8 +93,6 @@ public class SwipeTrail : MonoBehaviour
                 lastPoint = worldPos;
             }
         }
-
-        // КІНЕЦЬ свайпу: запускаємо плавне затухання
         if (up && isSwiping)
         {
             isSwiping = false;

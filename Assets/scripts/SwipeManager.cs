@@ -4,7 +4,7 @@ public class SwipeManager : MonoBehaviour
 {
     public GameObject swipeTrailPrefab;
     public float minMoveThreshold = 0.1f;
-    public float trailLifetime = 1f;
+    public float trailLifetime = 0f;
     public float trailWidth = 0.1f;
     public float zOffset = -1f; // важливе зміщення ближче до камери
 
