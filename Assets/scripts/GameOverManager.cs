@@ -1,3 +1,4 @@
+// File: Assets/Scripts/GameOverManager.cs
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -11,7 +12,7 @@ public class GameOverManager : MonoBehaviour
     [Header("Result Texts")]
     public TextMeshProUGUI yourScoreText;
     public TextMeshProUGUI highScoreText;
-    public TextMeshProUGUI coinText;
+    public TextMeshProUGUI coinText;          // показує монети, зароблені за сесію
 
     [Header("Buttons")]
     public Button restartButton;
@@ -26,31 +27,38 @@ public class GameOverManager : MonoBehaviour
 
     public void ShowGameOver()
     {
+        // зупиняємо гру
         Time.timeScale = 0f;
 
+        // рахунок за сесію
         int finalScore = GameSceneManager.Instance.Score;
         yourScoreText.text = $"Рахунок: {finalScore}";
 
-        // Правильно перевіряємо й оновлюємо рекорд
+        // оновлюємо рекорд, якщо потрібно
         RecordManager.TryUpdate(finalScore);
+        highScoreText.text    = $"Рекорд: {RecordManager.HighScore}";
 
-        // Тепер завжди отримуємо актуальний рекорд
-        highScoreText.text = $"Рекорд: {RecordManager.HighScore}";
+        // скільки монет зароблено в цій сесії
+        int sessionCoins    = GameSceneManager.Instance.SessionCoins;
+        coinText.text       = $"Монети: {sessionCoins}";
 
-        int sessionCoins = GameSceneManager.Instance.SessionCoins;
-        coinText.text = $"Монети: {sessionCoins}";
+        // Додаємо монети до загального балансу і зберігаємо
+        CurrencyManager.Add(sessionCoins);
+        
 
         gameOverUI.SetActive(true);
     }
 
     void OnRestart()
     {
+        // перезапуск сцени
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     void OnMainMenu()
     {
+        // повернення в головне меню
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }

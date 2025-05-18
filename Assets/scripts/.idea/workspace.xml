@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7bd1f5a-8021-4bca-b609-2a32463e4865" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Prefabs/Gprojectail.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefabs/Gprojectail.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unity.VisualScripting.Generated/VisualScripting.Core/AotStubs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unity.VisualScripting.Generated/VisualScripting.Core/AotStubs.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EffectManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EffectManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameOverManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameOverManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SkinManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SkinManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SwipeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SwipeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SwipeTrail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SwipeTrail.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +35,9 @@
     <setting file="file://$PROJECT_DIR$/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RecordManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SkinItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SkinItem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SkinManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SwipeManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SwipeManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SwipeTrail.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/bprojectil.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/spawner.cs" root0="FORCE_HIGHLIGHTING" />
@@ -319,7 +321,11 @@
       <workItem from="1746906863409" duration="9000" />
       <workItem from="1747533624709" duration="744000" />
       <workItem from="1747534672848" duration="11000" />
-      <workItem from="1747534737164" duration="180000" />
+      <workItem from="1747534736191" duration="453000" />
+      <workItem from="1747536280738" duration="615000" />
+      <workItem from="1747537419764" duration="70000" />
+      <workItem from="1747537503568" duration="253000" />
+      <workItem from="1747537866122" duration="289000" />
     </task>
     <servers />
   </component>
